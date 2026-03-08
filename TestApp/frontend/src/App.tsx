@@ -3,10 +3,27 @@ import teamData from "./CollegeBasketballTeams.json";
 
 const teams = teamData.teams;
 
-function App() {
+function Heading() {
   return (
     <>
       <h1>College Basketball Teams</h1>
+    </>
+  );
+}
+
+function Welcome() {
+  return (
+    <p>
+      Explore NCAA college basketball teams, their mascots, and locations as we get ready for March Madness!
+    </p>
+  );
+}
+
+function App() {
+  return (
+    <>
+      <Heading />
+      <Welcome />
       <TeamList teams={teams} />
     </>
   );
